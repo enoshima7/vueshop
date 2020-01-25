@@ -1,4 +1,8 @@
 # vueshop
+## 整体使用**vue/cli搭建**
+## 使用了**bootstrap4**制作页面交互UI
+## 在**undraw寻找素材**
+## 使用**google firebase**做**后端API**
 
 ## Project setup
 ```
