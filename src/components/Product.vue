@@ -21,6 +21,8 @@
 </template>
 
 <script>
+import {db,fb} from '../firebase'
+
 export default {
   name: "Product",
   props: {
