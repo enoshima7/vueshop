@@ -2,7 +2,7 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import jQuery from 'jquery'
-require ('firebase/firestore')
+require('firebase/firestore')
 
 Vue.use(VueFirestore, {
   key: 'id',         // the name of the property. Default is '.key'.
@@ -18,7 +18,13 @@ window.Swal = Swal
 window.$ = window.jQuery = jQuery
 
 Vue.component('Navbar', require('./components/NavBar.vue').default)
+Vue.component('add-to-cart', require('./components/AddToCart.vue').default)
 Vue.use(VueFirestore)
+import VueCarousel from 'vue-carousel';
+Vue.use(VueCarousel);
+import Vue2Filters from 'vue2-filters'
+ 
+Vue.use(Vue2Filters)
 
 const Toast = Swal.mixin({
   toast: true,
