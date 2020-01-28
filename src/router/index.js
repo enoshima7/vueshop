@@ -8,6 +8,7 @@ import Order from '../components/Order'
 import Product from '../components/Product'
 import Profile from '../components/Profile'
 import { fb } from '../firebase'
+import Checkout from '../components/CheckOut'
 Vue.use(VueRouter)
 
 const routes = [
@@ -22,6 +23,7 @@ const routes = [
       { path: 'profile', component: Profile, name: 'profile' }
     ]
   },
+  { path: '/checkout', component: Checkout, name: 'checkout' },
 
 ]
 
