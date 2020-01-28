@@ -25,9 +25,8 @@ export default {
     };
   },
   methods: {
-    addToCart() {
-      $("#miniCart").modal("show");
-      this.$store.commit("addToCart", this.item);
+    addToCart(){
+      this.$store.commit('addToCart',this.item)
     }
   }
 };

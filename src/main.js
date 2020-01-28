@@ -23,8 +23,9 @@ Vue.use(VueFirestore)
 import VueCarousel from 'vue-carousel';
 Vue.use(VueCarousel);
 import Vue2Filters from 'vue2-filters'
- 
 Vue.use(Vue2Filters)
+
+import store from './store'
 
 const Toast = Swal.mixin({
   toast: true,
@@ -45,6 +46,7 @@ fb.auth().onAuthStateChanged(function (user) {
   if (!app) {
     new Vue({
       router,
+      store,
       render: h => h(App)
     }).$mount('#app')
   }
