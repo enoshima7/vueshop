@@ -26,6 +26,7 @@ export default {
   },
   methods: {
     addToCart(){
+      $('#miniCart').modal('show')
       this.$store.commit('addToCart',this.item)
     }
   }
