@@ -25,7 +25,7 @@
                   <h5 class="mt-0">
                     {{item.productName}}
                     <span
-                      class="float-right"
+                      class="float-right removeItem"
                       @click="$store.commit('removeFromCart',item)"
                     >X</span>
                   </h5>
@@ -62,4 +62,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.removeItem{
+  cursor: pointer;
+}
 </style>

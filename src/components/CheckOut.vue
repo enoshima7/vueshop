@@ -6,7 +6,7 @@
         <div class="col-md-9">
           <h4 class="py-4">Checkout Class</h4>
           <ul>
-            <li v-for="(item,index) in this.$store.state.cart" :key="index" class="media">
+            <li v-for="(item,index) in this.$store.state.cart" :key="index" class="media mt-4">
               <img :src="item.productImage" width="80px" class="align-self-center mr-3" alt />
               <div class="media-body">
                 <h5 class="mt-0">
@@ -18,7 +18,7 @@
             </li>
           </ul>
         </div>
-        <div class="col-md-9">Total Price</div>
+        <div class="col-md-3">Total Price</div>
       </div>
     </div>
   </div>
