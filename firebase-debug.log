@@ -1,0 +1,48 @@
+[debug] [2020-02-03T05:40:22.964Z] ----------------------------------------------------------------------
+[debug] [2020-02-03T05:40:22.965Z] Command:       /usr/local/bin/node /usr/local/bin/firebase login
+[debug] [2020-02-03T05:40:22.965Z] CLI Version:   7.12.1
+[debug] [2020-02-03T05:40:22.965Z] Platform:      darwin
+[debug] [2020-02-03T05:40:22.965Z] Node Version:  v12.14.1
+[debug] [2020-02-03T05:40:22.966Z] Time:          Mon Feb 03 2020 13:40:22 GMT+0800 (GMT+08:00)
+[debug] [2020-02-03T05:40:22.966Z] ----------------------------------------------------------------------
+[debug] [2020-02-03T05:40:22.966Z] 
+[info] i  Firebase optionally collects CLI usage and error reporting information to help improve our products. Data is collected in accordance with Google's privacy policy (https://policies.google.com/privacy) and is not used to identify you.
+
+[info] i  To change your data collection preference at any time, run `firebase logout` and log in again.
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=8361770&redirect_uri=http%3A%2F%2Flocalhost%3A9005
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-02-03T05:40:35.186Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+
+[debug] [2020-02-03T05:41:14.879Z] >>> HTTP REQUEST POST https://accounts.google.com/o/oauth2/token  
+
+[debug] [2020-02-03T05:41:50.658Z] Token Fetch Error: FirebaseError: Server Error. connect ETIMEDOUT 172.217.24.13:443
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:30:31)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.onRequestError (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:881:8)
+    at ClientRequest.emit (events.js:223:5)
+    at ClientRequest.EventEmitter.emit (domain.js:475:20)
+    at TLSSocket.socketErrorListener (_http_client.js:406:9)
+    at TLSSocket.emit (events.js:223:5)
+    at TLSSocket.EventEmitter.emit (domain.js:475:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
+[debug] [2020-02-03T05:42:30.333Z] Token Fetch Error: FirebaseError: Server Error. connect ETIMEDOUT 172.217.24.13:443
+    at Request._callback (/usr/local/lib/node_modules/firebase-tools/lib/api.js:30:31)
+    at self.callback (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:185:22)
+    at Request.emit (events.js:223:5)
+    at Request.EventEmitter.emit (domain.js:475:20)
+    at Request.onRequestError (/usr/local/lib/node_modules/firebase-tools/node_modules/request/request.js:881:8)
+    at ClientRequest.emit (events.js:223:5)
+    at ClientRequest.EventEmitter.emit (domain.js:475:20)
+    at TLSSocket.socketErrorListener (_http_client.js:406:9)
+    at TLSSocket.emit (events.js:223:5)
+    at TLSSocket.EventEmitter.emit (domain.js:475:20)
+    at emitErrorNT (internal/streams/destroy.js:92:8)
+    at emitErrorAndCloseNT (internal/streams/destroy.js:60:3)
+    at processTicksAndRejections (internal/process/task_queues.js:81:21)
